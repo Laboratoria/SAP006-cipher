@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="root">
-    <h1>Hello world!</h1>
-  </div>
-  <script src="index.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>cifra de césar</title>
+    <meta name="viewport" content="GFwidth=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>César Cipher</title>
+  </head>
+  <body>
+    <section class="home">
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+
+            <li>
+              <a href="#">Cipher</a>
+            </li>
+          </ul>
+        </nav>
+      
+      </header>
+
+      <div class ="banner">
+        <h1>Cipher Wars</h1>
+        <span class="slogan">Mensagens seguras e criptografadas.</span>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="timing">
+          <div class="overlay">
+            Cifra de César
+          </div>
+        </div>
+        <div class="experience">
+          Como Funciona
+        </div>
+      </div>
+    </section>
+
+    <section class="cipher">
+      <nav>
+        <label for="check" class="checkbtn">
+      </nav>
+      <div class="table">
+        <form>
+          <textarea
+              id="text" name="text_message" type="text" placeholder="Digite sua mensagem." wrap="soft">
+          </textarea>
+            <div class="key">
+             <p><strong> DESLOCAMENTO </strong></p>
+             <input id="offset" type="number" name="offset" value="0" />
+            </div>
+          <textarea
+            id="code" name="cipher" type="text" placeholder="Digite a mensagem codificada." wrap="soft">
+          </textarea>
+        </form>
+      </div>
+      <div class="buttons">
+        <button id="encrypt" type="submit">CODIFICAR</button>
+        <button id="decrypt" type="submit">DESCODIFICAR</button>
+      </div>
+    </section>
+    <script src="./index.js" type="module"></script>
+    <script src="./cipher.js" type="module"></script>
+  </body>
 </html>
